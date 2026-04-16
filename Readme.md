@@ -11,23 +11,23 @@ Predicting survival risk in advance allows healthcare professionals to:
 
 
 -Identify high-risk patients early
--Optimize treatment strategies
--Improve patient monitoring and care
+- Optimize treatment strategies
+- Improve patient monitoring and care
 
 This project predicts whether a patient is:
--High Risk (Deceased)
--Low Risk (Survived)
+- High Risk (Deceased)
+- Low Risk (Survived)
 based on historical clinical and tumor data.
 
 ## 🚀 Key Features
--End-to-end machine learning pipeline
--Data cleaning & exploratory analysis using Jupyter Notebooks
--Feature engineering & preprocessing
--Survival analysis using Kaplan-Meier & Cox models
--Multiple ML models trained and compared
--Best-performing model selected for deployment
--Streamlit-based UI for real-time predictions
--Clean, production-ready project structure
+- End-to-end machine learning pipeline
+- Data cleaning & exploratory analysis using Jupyter Notebooks
+- Feature engineering & preprocessing
+- Survival analysis using Kaplan-Meier & Cox models
+- Multiple ML models trained and compared
+- Best-performing model selected for deployment
+- Streamlit-based UI for real-time predictions
+- Clean, production-ready project structure
 
 
 
@@ -36,10 +36,10 @@ based on historical clinical and tumor data.
 👉 (Add your Streamlit link after deployment)
 
 ## App Capabilities
--Enter patient clinical details
--Predict survival risk (High / Low)
--Instant real-time inference
--Simple and user-friendly interface
+- Enter patient clinical details
+- Predict survival risk (High / Low)
+- Instant real-time inference
+- Simple and user-friendly interface
 
 
 
@@ -89,11 +89,11 @@ Breast_Cancer_Risk_Prediction/
 
 
 ## 📊 Dataset
--Breast Cancer METABRIC Dataset (not included)
+- Breast Cancer METABRIC Dataset (not included)
 The dataset contains:
--Patient demographic and clinical information
--Tumor characteristics
--Survival time and status
+- Patient demographic and clinical information
+- Tumor characteristics
+- Survival time and status
 ⚠️ Dataset is not uploaded due to size and privacy considerations.
 Please place the dataset manually inside the Data/ folder.
 
@@ -109,12 +109,12 @@ pip install -r requirements.txt
 
 ## 🧹 Data Preparation
 Data cleaning and preprocessing are performed in:
--Notebooks/Preprocessing.ipynb
--Notebooks/EDA.ipynb
+- Notebooks/Preprocessing.ipynb
+- Notebooks/EDA.ipynb
 
 Survival analysis:
--Kaplan-Meier Model
--Cox Proportional Hazards Model
+- Kaplan-Meier Model
+- Cox Proportional Hazards Model
 
 
 ## 🤖 Model Training
@@ -122,16 +122,16 @@ Run training from the project root:
 python SRV/Model training.py
 
 Training pipeline:
--Load dataset
--Preprocess features
--Train-test split
--Train multiple ML models
--Evaluate and compare performance
+- Load dataset
+- Preprocess features
+- Train-test split
+- Train multiple ML models
+- Evaluate and compare performance
 
 Models trained:
--Logistic Regression
--Decision Tree
--Random Forest
+- Logistic Regression
+- Decision Tree
+- Random Forest
 
 Best model is saved as:
 best_model.pkl
@@ -142,40 +142,40 @@ streamlit run app.py
 
 
 ## ⚡ Features
--Real-time prediction
--Clean UI interface
--Numerical input handling
--Fast inference using trained model
+- Real-time prediction
+- Clean UI interface
+- Numerical input handling
+- Fast inference using trained model
 
 
 
 ## 📦 Deployment & Prediction
 Deployment:
--Streamlit Cloud (recommended)
+- Streamlit Cloud (recommended)
 
 Prediction:
--Model loaded using joblib
--Input features processed
--Output returned as risk classification
+- Model loaded using joblib
+- Input features processed
+- Output returned as risk classification
 
 
 ## 📊 Technologies Used
--Python 3.x
--Pandas, NumPy
--Scikit-learn
--Lifelines (Survival Analysis)
--Matplotlib / Seaborn
--Streamlit
--Joblib
--Jupyter Notebook
+- Python 3.x
+- Pandas, NumPy
+- Scikit-learn
+- Lifelines (Survival Analysis)
+- Matplotlib / Seaborn
+- Streamlit
+- Joblib
+- Jupyter Notebook
 
 
 ## 🚀 Future Enhancements
--Probability-based risk scoring
--Model explainability (SHAP)
--REST API using FastAPI
--Docker containerization
--Advanced hyperparameter tuning
+- Probability-based risk scoring
+- Model explainability (SHAP)
+- REST API using FastAPI
+- Docker containerization
+- Advanced hyperparameter tuning
 
 
 ## 🤝 Contributing
@@ -188,8 +188,8 @@ Course: Data Science & AI
 
 ## 🙏 Acknowledgements
 -METABRIC Dataset
--Open-source machine learning community
--Survival analysis libraries
+- Open-source machine learning community
+- Survival analysis libraries
 
 
 
