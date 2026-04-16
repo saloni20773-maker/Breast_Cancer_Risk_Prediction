@@ -102,9 +102,11 @@ Please place the dataset manually inside the Data/ folder.
 git clone https://github.com/yourusername/Breast_Cancer_Risk_Prediction.gitcd Breast_Cancer_Risk_Prediction
 
 2️⃣ Create and activate virtual environment
+
 python -m venv venvvenv\Scripts\activate      # Windowssource venv/bin/activate   # macOS/Linux
 
 3️⃣ Install dependencies
+
 pip install -r requirements.txt
 
 ## 🧹 Data Preparation
