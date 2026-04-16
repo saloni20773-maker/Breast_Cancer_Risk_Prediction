@@ -1,0 +1,68 @@
+import pandas as pd
+import joblib
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+# =========================
+# 1. Load Data
+# =========================
+df = pd.read_csv(r"C:\Users\HP\Desktop\BIA\Breast_Cancer_Risk_Prediction\Data\Breast Cancer METABRIC.csv")
+
+# =========================
+# 2. Create event & time
+# =========================
+df['event'] = (df['Overall Survival Status'] == 'Deceased').astype(int)
+df['time'] = df['Overall Survival (Months)']
+
+# =========================
+# 3. Target
+# =========================
+df['target_10yr'] = df['event']
+
+# =========================
+# 4. Drop missing values
+# =========================
+df = df.dropna()
+
+# =========================
+# 5. Features & Target
+# =========================
+X = df.drop(['target_10yr', 'time', 'event'], axis=1)
+y = df['target_10yr']
+
+# Remove text data
+X = X.select_dtypes(include=['number'])
+
+# =========================
+# 6. Train-Test Split
+# =========================
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+
+# =========================
+# 7. Train Best Model (Random Forest)
+# =========================
+best_model = RandomForestClassifier()
+best_model.fit(X_train, y_train)
+accuracy = accuracy_score(y_test, best_model.predict(X_test))
+
+# =========================
+# 8. Save Best Model
+# =========================
+model_path = r"C:\Users\HP\Desktop\BIA\Breast_Cancer_Risk_Prediction\best_model.pkl"
+joblib.dump(best_model, model_path)
+
+print("\n" + "="*40)
+print("BEST MODEL SAVED")
+print("="*40)
+print(f"Model Type: Random Forest Classifier")
+print(f"Accuracy: {accuracy:.2%}")
+print(f"Saved to: {model_path}")
+print("="*40)
