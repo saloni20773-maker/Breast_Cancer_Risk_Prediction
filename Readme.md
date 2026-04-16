@@ -44,7 +44,7 @@ based on historical clinical and tumor data.
 
 
 ## 🧠 Machine Learning Workflow
----
+```
 Raw Clinical Data
    ↓
 Data Cleaning & Feature Engineering
@@ -58,11 +58,11 @@ Model Training & Evaluation
 Best Model Selection
    ↓
 Streamlit Deployment
----
+```
 
 
 ## 📁 Project Structure
----
+```
 Breast_Cancer_Risk_Prediction/
 │
 ├── app.py                          # Streamlit application (ROOT)
@@ -85,7 +85,7 @@ Breast_Cancer_Risk_Prediction/
 │   └── Machine learning Models.ipynb
 │
 └── venv/                           # Virtual environment (ignored)
----
+```
 
 
 ## 📊 Dataset
