@@ -31,9 +31,7 @@ based on historical clinical and tumor data.
 
 
 
-## 🌐 Live Application
-🔗 Try the app here:
-👉 (Add your Streamlit link after deployment)
+
 
 ## App Capabilities
 - Enter patient clinical details
