@@ -98,6 +98,7 @@ Please place the dataset manually inside the Data/ folder.
 ## ⚙️ Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/saloni20773-maker/Breast_Cancer_Risk_Prediction
+
 2️⃣ Create and activate virtual environment
 python -m venv venvvenv\Scripts\activate      # Windowssource venv/bin/activate   # macOS/Linux
 
