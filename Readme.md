@@ -41,8 +41,8 @@ based on historical clinical and tumor data.
 - Instant real-time inference
 - Simple and user-friendly interface
 
----
 
+---
 ## 🧠 Machine Learning Workflow
 
 Raw Clinical Data
@@ -58,6 +58,7 @@ Model Training & Evaluation
 Best Model Selection
    ↓
 Streamlit Deployment
+---
 
 ---
 ## 📁 Project Structure
@@ -84,7 +85,6 @@ Breast_Cancer_Risk_Prediction/
 │   └── Machine learning Models.ipynb
 │
 └── venv/                           # Virtual environment (ignored)
-
 ---
 
 
