@@ -1,9 +1,11 @@
-## 🎗️ Breast Cancer Risk Prediction using Machine Learning
-A machine learning project that predicts breast cancer patient survival risk using clinical data.
-The model is trained using classical ML algorithms and deployed as an interactive Streamlit web application for real-time predictions.
-🔗 Live App:
-👉 (Add your Streamlit deployment link here)
+# 🎗️ Breast Cancer Risk Prediction using Machine Learning
 
+## 📌 Overview
+Breast cancer is one of the leading causes of death among women worldwide. Early detection plays a crucial role in improving survival rates.
+
+This project aims to build a machine learning model that predicts whether a patient is at **high risk or low risk** of breast cancer using clinical data.
+
+---
 ## 📌 Problem Statement
 Breast cancer is one of the leading causes of mortality worldwide.
 Early identification of high-risk patients can significantly improve treatment outcomes.
@@ -19,6 +21,8 @@ This project predicts whether a patient is:
 - Low Risk (Survived)
 based on historical clinical and tumor data.
 
+---
+
 ## 🚀 Key Features
 - End-to-end machine learning pipeline
 - Data cleaning & exploratory analysis using Jupyter Notebooks
@@ -29,9 +33,7 @@ based on historical clinical and tumor data.
 - Streamlit-based UI for real-time predictions
 - Clean, production-ready project structure
 
-
-
-
+---
 
 ## App Capabilities
 - Enter patient clinical details
@@ -39,10 +41,10 @@ based on historical clinical and tumor data.
 - Instant real-time inference
 - Simple and user-friendly interface
 
-
+---
 
 ## 🧠 Machine Learning Workflow
-```
+
 Raw Clinical Data
    ↓
 Data Cleaning & Feature Engineering
@@ -56,11 +58,10 @@ Model Training & Evaluation
 Best Model Selection
    ↓
 Streamlit Deployment
-```
 
-
+---
 ## 📁 Project Structure
-```
+
 Breast_Cancer_Risk_Prediction/
 │
 ├── app.py                          # Streamlit application (ROOT)
@@ -83,79 +84,83 @@ Breast_Cancer_Risk_Prediction/
 │   └── Machine learning Models.ipynb
 │
 └── venv/                           # Virtual environment (ignored)
-```
+
+---
 
 
-## 📊 Dataset
-- Breast Cancer METABRIC Dataset (not included)
-The dataset contains:
-- Patient demographic and clinical information
-- Tumor characteristics
-- Survival time and status
-⚠️ Dataset is not uploaded due to size and privacy considerations.
-Please place the dataset manually inside the Data/ folder.
+## 🎯 Objectives
+- Predict breast cancer risk using ML models  
+- Compare multiple algorithms  
+- Identify the best performing model  
+- Assist in early diagnosis and decision-making  
 
-## ⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/saloni20773-maker/Breast_Cancer_Risk_Prediction
+---
 
-2️⃣ Create and activate virtual environment
-python -m venv venvvenv\Scripts\activate      # Windowssource venv/bin/activate   # macOS/Linux
+## 📊 Dataset Information
+- **Dataset:** METABRIC (Molecular Taxonomy of Breast Cancer International Consortium)  
+- **Type:** Clinical + Genomic Data  
+- **Samples:** ~2000 patients  
+- **Features:** Age, tumor size, lymph nodes, gene expression, etc.  
+- **Target Variable:** `event` (Survival / Risk)
 
-3️⃣ Install dependencies
-pip install -r requirements.txt
+---
 
-## 🧹 Data Preparation
-Data cleaning and preprocessing are performed in:
-- Notebooks/Preprocessing.ipynb
-- Notebooks/EDA.ipynb
+## ⚙️ Data Preprocessing
+- Handling missing values  
+- Encoding categorical variables  
+- Feature selection  
+- Target variable creation  
 
-Survival analysis:
-- Kaplan-Meier Model
-- Cox Proportional Hazards Model
+---
 
+## 📈 Exploratory Data Analysis (EDA)
+- Histogram (data distribution)  
+- Heatmap (correlation analysis)  
+- Feature relationship analysis  
 
-## 🤖 Model Training
-Run training from the project root:
-python SRV/Model training.py
+---
 
-Training pipeline:
-- Load dataset
-- Preprocess features
-- Train-test split
-- Train multiple ML models
-- Evaluate and compare performance
+## 🤖 Machine Learning Models
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
 
-Models trained:
-- Logistic Regression
-- Decision Tree
-- Random Forest
+---
 
-Best model is saved as:
-best_model.pkl
+## 🧪 Model Training & Evaluation
+- Train-Test Split applied  
+- Models trained on training data  
+- Performance evaluated using:
+  - Accuracy  
+  - Confusion Matrix  
 
-## 🖥️ Run Streamlit App
-From the project root:
-streamlit run app.py
+---
 
+## 📊 Model Performance Comparison
 
-## ⚡ Features
-- Real-time prediction
-- Clean UI interface
-- Numerical input handling
-- Fast inference using trained model
+| Model               | Accuracy |
+|--------------------|----------|
+| Logistic Regression| 73.97%   |
+| Decision Tree      | 74.89%   |
+| Random Forest      | 79.91%   |
 
+🏆 **Best Model: Random Forest**
 
+---
 
-## 📦 Deployment & Prediction
-Deployment:
-- Streamlit Cloud (recommended)
+## 📊 Confusion Matrix
 
-Prediction:
-- Model loaded using joblib
-- Input features processed
-- Output returned as risk classification
+|               | Predicted Low | Predicted High |
+|---------------|--------------|----------------|
+| Actual Low    | 76 (TN)      | 21 (FP)        |
+| Actual High   | 27 (FN)      | 95 (TP)        |
 
+### 🔍 Insights
+- Model correctly predicts majority of cases  
+- False Negatives are critical in medical context  
+- Overall performance is reliable  
+
+---
 
 ## 📊 Technologies Used
 - Python 3.x
@@ -167,6 +172,7 @@ Prediction:
 - Joblib
 - Jupyter Notebook
 
+---
 
 ## 🚀 Future Enhancements
 - Probability-based risk scoring
@@ -175,19 +181,21 @@ Prediction:
 - Docker containerization
 - Advanced hyperparameter tuning
 
-
+---
 ## 🤝 Contributing
 Contributions, suggestions, and feature requests are welcome.
 Feel free to open an issue or submit a pull request.
 
+---
+
 ## 👩‍💻 Author
 Saloni Sharma
 Course: Data Science & AI
+---
 
 ## 🙏 Acknowledgements
 -METABRIC Dataset
 - Open-source machine learning community
 - Survival analysis libraries
 
-
-
+---
